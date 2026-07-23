@@ -200,5 +200,9 @@ footer {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+body.dark {
+  background: black;
+  color: white;
+}
 
 /*# sourceMappingURL=style.css.map */

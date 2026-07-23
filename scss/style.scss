@@ -188,8 +188,9 @@ main{
 
 //================ Skill Card ===============
 .skill_card{
-    @include card;
-    border-left:4px solid $secondary;
+    background:white;
+    padding:20px;
+    border:1px solid #ccc;
 }
 
 //================ Table ====================
@@ -288,5 +289,12 @@ footer{
         grid-template-columns:repeat(3,1fr);
 
     }
+
+}
+
+body.dark{
+
+    background:black;
+    color:white;
 
 }
