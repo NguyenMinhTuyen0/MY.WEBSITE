@@ -1,148 +1,208 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ cá nhân - Nguyễn Minh Tuyến</title>
+
     <link rel="stylesheet" href="css/style.css">
-    
 </head>
 
-<header>
-    <h1>Trang Cá Nhân</h1>
-</header>
+<body>
 
-<nav>
-    <a href="#gioithieu">Giới thiệu</a>
-    <a href="#kynang">Kỹ năng</a>
-    <a href="#lienhe">Liên hệ</a>
-</nav>
+    <header>
+        <h1 id="main-title">Trang Cá Nhân</h1>
+    </header>
 
-<main>
+    <nav>
+        <ul>
+            <li><a href="#gioithieu">Giới thiệu</a></li>
+            <li><a href="#kynang">Kỹ năng</a></li>
+            <li><a href="#duan">Dự án</a></li>
+            <li><a href="#lienhe">Liên hệ</a></li>
+        </ul>
+    </nav>
 
-    <section id="gioithieu">
-        <h2>Giới thiệu</h2>
+    <div class="page-layout">
 
-        <img src="avatar.jpg" alt="Ảnh đại diện">
+        <aside class="sidebar">
 
-        <p>
-            Xin chào! Tôi là Nguyễn Minh Tuyến.
-            Hiện đang học lập trình Web HTML, CSS và JavaScript.
-        </p>
-    </section>
+            <h3>Danh mục</h3>
 
-    <section id="kynang">
+            <ul>
+                <li><a href="#gioithieu">Giới thiệu</a></li>
+                <li><a href="#kynang">Kỹ năng</a></li>
+                <li><a href="#duan">Dự án</a></li>
+                <li><a href="#lienhe">Liên hệ</a></li>
+            </ul>
 
-        <article>
-            <h2>Bảng kỹ năng</h2>
+        </aside>
 
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Kỹ năng</th>
-                        <th>Mức độ</th>
-                    </tr>
-                </thead>
+        <main>
 
-                <tbody>
-                    <tr>
-                        <td>HTML</td>
-                        <td>Tốt</td>
-                    </tr>
+            <section class="hero" id="gioithieu">
 
-                    <tr>
-                        <td>CSS</td>
-                        <td>Khá</td>
-                    </tr>
+                <img src="images/avatar.jpg"
+                     alt="Ảnh đại diện của Nguyễn Minh Tuyến"
+                     width="180">
 
-                    <tr>
-                        <td>JavaScript</td>
-                        <td>Trung bình</td>
-                    </tr>
-                </tbody>
-            </table>
+                <h2>Xin chào!</h2>
 
-        </article>
+                <p>
+                    Tôi là <span class="highlight">Nguyễn Minh Tuyến</span>,
+                    hiện đang học lập trình Web HTML, CSS, JavaScript và SCSS.
+                </p>
 
-    </section>
+                <a href="#duan" class="btn-primary">
+                    Xem dự án
+                </a>
 
-    <section id="lienhe">
+            </section>
 
-        <h2>Liên hệ</h2>
+            <section class="card" id="kynang">
 
-        <form>
+                <h2>Kỹ năng</h2>
 
-            <label for="name">Họ tên</label>
-            <input
-                type="text"
-                id="name"
-                required>
+                <div class="skills-grid">
 
-            <label for="email">Email</label>
-            <input
-                type="email"
-                id="email"
-                required>
+                    <div class="skill_card">
+                        HTML5
+                    </div>
 
-            <label for="phone">Số điện thoại</label>
-            <input
-                type="tel"
-                id="phone"
-                pattern="[0-9]{10}"
-                placeholder="0123456789"
-                required>
+                    <div class="skill_card">
+                        CSS3 / SCSS
+                    </div>
 
-            <label for="birth">Ngày sinh</label>
-            <input
-                type="date"
-                id="birth"
-                required>
+                    <div class="skill_card">
+                        JavaScript
+                    </div>
 
-            <button type="submit">
-                Gửi
-            </button>
+                    <div class="skill_card">
+                        Responsive Web
+                    </div>
 
-        </form>
+                </div>
 
-    </section>
+                <br>
 
+                <table>
 
-    <section>
-    <h2>Dự án</h2>
+                    <thead>
+                        <tr>
+                            <th>Kỹ năng</th>
+                            <th>Mức độ</th>
+                        </tr>
+                    </thead>
 
-    <div class="projects">
+                    <tbody>
 
-        <div class="card">
-            <img src="images/avatar.jpg" alt="Ảnh 1">
-            <h3>Website bán hàng</h3>
-            <p>HTML CSS JS</p>
-        </div>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Tốt</td>
+                        </tr>
 
-        <div class="card">
-            <img src="images/avatar.jpg" alt="Ảnh 2">
-            <h3>Portfolio</h3>
-            <p>Responsive</p>
-        </div>
+                        <tr>
+                            <td>CSS / SCSS</td>
+                            <td>Khá</td>
+                        </tr>
 
-        <div class="card">
-            <img src="images/avatar.jpg" alt="Ảnh 3">
-            <h3>Blog</h3>
-            <p>SCSS</p>
-        </div>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Trung bình</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+            <section class="card" id="duan">
+
+                <h2>Dự án</h2>
+
+                <!-- JavaScript sẽ tạo card ở đây -->
+                <div class="projects cards-grid"></div>
+
+            </section>
+
+            <section class="card" id="lienhe">
+
+                <h2>Liên hệ</h2>
+
+                <form id="contactForm">
+
+                    <label for="name">Họ tên</label>
+                    <input
+                        type="text"
+                        id="name"
+                        required>
+
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        required>
+
+                    <label for="phone">Số điện thoại</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        pattern="[0-9]{10}"
+                        placeholder="0123456789"
+                        required>
+
+                    <label for="birth">Ngày sinh</label>
+                    <input
+                        type="date"
+                        id="birth"
+                        required>
+
+                    <button type="submit">
+                        Gửi
+                    </button>
+
+                </form>
+
+            </section>
+
+        </main>
+
     </div>
-</section>
 
-</main>
+    <footer>
 
-<footer>
-    <p>&copy; 2026 Nguyễn Minh Tuyến</p>
-    <address>
-        Liên hệ: <a href="mailto:minhtuyen2020@gmail.com">minhtuyen2020@gmail.com</a>
-        <telephone>Điện thoại: <a href="tel:0363946057">0363946057</a></telephone>
-        <time datetime="2026-06-01">23/07/2026</time>
-    </address>
-</footer>
+        <address>
+
+            <p>&copy; 2026 Nguyễn Minh Tuyến</p>
+
+            <p>
+                Email:
+                <a href="mailto:minhtuyen2020@gmail.com">
+                    minhtuyen2020@gmail.com
+                </a>
+            </p>
+
+            <p>
+                Điện thoại:
+                <a href="tel:0363946057">
+                    0363946057
+                </a>
+            </p>
+
+            <p>
+                <time datetime="2026-07-23">
+                    23/07/2026
+                </time>
+            </p>
+
+        </address>
+
+    </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>
